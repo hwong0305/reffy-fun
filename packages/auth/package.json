@@ -1,0 +1,24 @@
+{
+  "name": "@reffy-fun/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@reffy-fun/db": "workspace:*",
+    "@reffy-fun/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@reffy-fun/config": "workspace:*",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"name": "@reffy-fun/api",
+	"type": "module",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./*": {
+			"default": "./src/*.ts"
+		}
+	},
+	"scripts": {},
+	"dependencies": {
+		"@reffy-fun/auth": "workspace:*",
+		"@reffy-fun/db": "workspace:*",
+		"@reffy-fun/env": "workspace:*",
+		"@trpc/client": "catalog:",
+		"@trpc/server": "catalog:",
+		"dotenv": "catalog:",
+		"drizzle-orm": "^0.45.1",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@reffy-fun/config": "workspace:*",
+		"hono": "catalog:",
+		"typescript": "^5"
+	}
+}
